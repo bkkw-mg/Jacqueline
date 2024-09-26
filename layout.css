@@ -1,0 +1,66 @@
+/* webfont */
+body, select, button, input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* grid */
+
+form {
+    display: grid;
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+label {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+
+/* style */
+
+.logo, .intro {
+    text-align: center;
+}
+
+.intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 2;
+}
+
+.check {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+input, select, button, textarea {
+    border: 1px solid #999;
+    width: 100%;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: 1px;
+}
+
+fieldset input {
+    width: 300px;
+}
+fieldset2 {
+    width: 300px;
+    margin: 2px auto #e65858;
+}
+button {
+    background: #bbb;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #329f49;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pizzabestellung</title>
+        <link href="Styles/layout.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+       <header>
+        <div class="logo">
+            <img src="images/pizzeria-da-angelo_logo.svg" width="400px" alt="Das Logo der Pizzeria Da Angelo">
+        </div>
+
+        <p class="intro">
+            <strong>Lieber Gast,</strong><br>
+                    wir freuen uns, dass Sie uns auf unserer Webseite besuchen!<br>
+                    Pizza und Pasta zum Abholen oder Liefern.<br><br>
+                    Wählen Sie gerne etwas aus.<br><br>
+                    <strong>Wir wünschen Ihnen jetzt schon einen guten Appetit!</strong> 
+        </p>
+
+       </header>
+
+       <main>
+            <form name="Bestellung" action="">
+                <label></label>
+                <div class="zwei-acht">
+                    <fieldset>
+                        <input type="radio" name="Auswahl" value="Abholung" required>
+                        <label>Abholung</label>
+                        <input type="radio" name="Auswahl" value="Lieferung" required>
+                        <label>Lieferung</label>
+                    </fieldset>
+                </div>
+                <label>Pizzaauswahl</label>
+                <select class="zwei-acht" name="Pizza" size="1">
+                    <option value="P01">Pizza Margherita</option> 
+                    <option value="P02">Pizza Salami</option>
+                    <option value="P03">Pizza Hawaii</option>
+                    <option value="P04">Pizza Tonno</option>
+                    <option value="P05">Pizza Quattro Formaggi</option>
+                    <option value="P06">Pizza Quattro Stagioni</option>
+                    <option value="P07">Pizza Frutti di Mare</option>
+                    <option value="P08">Pizza Napoli</option>
+                </select>
+                <label class="check">Sonderwünsche</label>
+                <fieldset>
+                    <div class="check">
+                        <input type="checkbox" value="scharf">
+                        <label>Extra Scharf</label>
+                    </div>
+
+                    <div class="check">
+                        <input type="checkbox" id="kaese" value="kaese">
+                        <label>Extra viel Käse</label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset2>
+                    <div class="Persönliche Eingaben">
+                        <label class="Persönliche Eingaben">Persönliche Eingaben</label><br><br>
+
+                            <label for="Persönliche Eingaben">Vorname</label>   <!-- 61-65 AI Verbessert-->
+                                <input id="Vorname" type="text" required>
+                    
+                                <label for="Nachname">Nachname</label>
+                                <input id="Nachname" type="text" required>
+                    
+                        <label class="Adresse">Straße</label> <!--Habe ich umgeändert-->
+                
+                        <input id="Straße" type="text">
+                    
+                        <label class="Adresse">Hausnummer</label>
+                        <input id="Hausnummer" type="text">
+                    
+                        <label class="Adresse">PLZ</label> <!--Habe ich umgeändert-->
+                        <input id="PLZ" type="text">
+                    
+                        <label class="Adresse">Ort</label>
+                        <input id="Ort" type="text">
+                    
+                        <label>E-Mail</label>
+                        <input type="E-mail">
+                    
+                    <label>Bemerkungen</label>
+                    <textarea rows="5"></textarea>
+                
+
+                        <button><strong>Bestellen</strong></button>
+                </fieldset2>
+                </div>
+            </form>
+       </main> 
+    </body>
+</html>
